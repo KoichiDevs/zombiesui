@@ -13,7 +13,7 @@ const App = () => {
       <About />
       <Ecosystem />
       <Tokenomics />
-      <PieChart />
+      {/* <PieChart /> */}
       <Roadmap />
       <Footer />
     </>
