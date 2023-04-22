@@ -134,7 +134,7 @@ const Ecosystem = () => {
     ];
 
     return (
-        <div className="w-full h-auto bg-newbg text-white py-20 px-10 overflow-hidden font-poppins" id="ecosystem">
+        <div className="w-full h-auto bg-newbg text-white py-20 px-10 overflow-hidden font-poppins z-0" id="ecosystem">
 
             <AnimateScale>
                 <div className="relative flex items-center w-fit mx-auto">
@@ -250,7 +250,7 @@ const Ecosystem = () => {
                     <div className="w-full flex items-center justify-center relative">
                         <AnimateRight>
                             <motion.img  whileInView={{ y: [0, -150], rotate: 360 }} transition={{duration: 1, repeat: Infinity, repeatType: "reverse" }} src="/coin.webp" alt="Coin" className="absolute w-20 -left-32 right-0 mx-auto top-20" />
-                            <img src="/lottery.webp" alt="Lottery" className="w-[40rem] z-10 relative" />
+                            <img src="/lottery.webp" alt="Lottery" className="w-[40rem] z-0 relative" />
                         </AnimateRight>
                     </div>
 

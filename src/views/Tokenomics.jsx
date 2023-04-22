@@ -87,7 +87,7 @@ const Tokenomics = () => {
             mode: 'dark'
         },
         chart: {
-            background: '#181c23    '
+            background: '#181c23'
         },
         responsive: [{
             breakpoint: 1280,
