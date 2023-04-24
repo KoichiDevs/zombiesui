@@ -132,6 +132,8 @@ const Tokenomics = () => {
                     <div className="w-[500px] md:h-[500px] relative">
                         <img src="/tokenomics.webp" alt="Tokenomics" className="" />
                     </div>
+
+                    
                 </div>
                 <motion.div variants={container} initial="hidden" animate={inView ? "show" : ""} className="flex flex-col md:w-full font-poppins gap-y-3 w-fit" ref={ref}>
                     {list.map((items, i) => {
