@@ -32,9 +32,9 @@ const About = () => {
       <span className="absolute top-0 left-0 w-full h-full rounded-full overflow-hidden">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
-            <circle fill="#A78BFA" cx="45" cy="55" r="30" />
-            <circle fill="#8B5CF6" cx="85" cy="120" r="45" />
-            <circle fill="#D53F8C" cx="130" cy="55" r="20" />
+            <motion.circle initial={{ opacity: 0, y: -200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 2, delay: 1.2, repeat: Infinity, repeatType: "reverse" }} fill="rgba(255, 255, 255, 0.3)" cx="45" cy="55" r="30" />
+            <motion.circle initial={{ opacity: 0, y: -200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, delay: 0.4, repeat: Infinity, repeatType: "reverse" }} fill="rgba(255, 255, 255, 0.3)" cx="85" cy="120" r="45" />
+            <motion.circle initial={{ opacity: 0, y: -200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 2.2, delay: 0.8, repeat: Infinity, repeatType: "reverse" }} fill="rgba(255, 255, 255, 0.3)" cx="130" cy="55" r="20" />
           </g>
         </svg>
       </span>
