@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import AnimateLeft from '../components/AnimateLeft'
 import AnimateRight from '../components/AnimateRight'
 
@@ -10,8 +11,6 @@ const About = () => {
                 <img src="/webspider.png" alt="WebSpider" className="absolute left-0 top-0" />
                 <img src="/web.png" alt="WebSpider" className="absolute right-0 top-0" />
             </div>
-
-
 
             <div className="max-w-[1500px] w-full mx-auto flex items-center justify-center py-20 gap-x-20 relative lg:flex-row flex-col gap-y-20 text-center lg:text-left">
 
@@ -26,12 +25,22 @@ const About = () => {
                         </p>
                     </AnimateLeft>
 
+                    <AnimateLeft>
+                        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-purple-500 hover:bg-purple-600 transition-all duration-200 ease-in-out px-6 py-3 rounded-lg mt-5">
+                           Whitepaper
+                        </motion.button>
+                    </AnimateLeft>
 
                 </div>
+
                 <AnimateRight>
-                    <img src="/about.webp" alt="About" className="w-[24rem]" />
+                    <div className="relative">
+                        <img src="/about.webp" alt="About" className="w-full md:w-[24rem]" />
+                    </div>
                 </AnimateRight>
+
                 <div className="bg-white/10 w-[15rem] h-[15rem] blur-[6rem] rounded-full absolute left-0 top-[15rem]"></div>
+
             </div>
 
         </section>
