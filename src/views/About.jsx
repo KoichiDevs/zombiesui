@@ -27,15 +27,20 @@ const About = () => {
 
                     <AnimateLeft>
   <a href="https://suizombie.gitbook.io/zombiesui-whitepaper/">
-    <motion.button whileHover={{ scale: 1.1, backgroundColor: "#4B5563" }} whileTap={{ scale: 0.9 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-green-500 hover:bg-green-600 transition-all duration-200 ease-in-out px-6 py-3 rounded-lg mt-5 font-poppins text-white relative overflow-hidden glow">
+    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-purple-500 hover:bg-purple-600 transition-all duration-200 ease-in-out px-6 py-3 rounded-lg mt-5 font-poppins text-white relative overflow-hidden glow">
       Whitepaper
-      <span className="absolute top-0 left-0 w-full h-full bg-green-400 opacity-20 rounded-full animate-pulse z-0"></span>
-      <span className="absolute top-0 left-0 w-full h-full bg-green-400 opacity-20 rounded-full animate-pulse-fast z-0"></span>
-      <span className="absolute top-0 left-0 w-full h-full bg-green-400 opacity-20 rounded-full animate-pulse-slow z-0"></span>
+      <span className="absolute top-0 left-0 w-full h-full rounded-full overflow-hidden">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fillRule="evenodd">
+            <circle fill="#A78BFA" cx="45" cy="55" r="30" />
+            <circle fill="#8B5CF6" cx="85" cy="120" r="45" />
+            <circle fill="#D53F8C" cx="130" cy="55" r="20" />
+          </g>
+        </svg>
+      </span>
     </motion.button>
   </a>
 </AnimateLeft>
-
                 </div>
 
                 <AnimateRight>
