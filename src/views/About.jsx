@@ -26,10 +26,12 @@ const About = () => {
                     </AnimateLeft>
 
                     <AnimateLeft>
-                        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-purple-500 hover:bg-purple-600 transition-all duration-200 ease-in-out px-6 py-3 rounded-lg mt-5">
-                           Whitepaper
-                        </motion.button>
-                    </AnimateLeft>
+  <a href="https://suizombie.gitbook.io/zombiesui-whitepaper/">
+    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-green-500 hover:bg-green-600 transition-all duration-200 ease-in-out px-6 py-3 rounded-lg mt-5 font-poppins text-white glow">
+      Whitepaper
+    </motion.button>
+  </a>
+</AnimateLeft>
 
                 </div>
 
