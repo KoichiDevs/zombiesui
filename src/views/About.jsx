@@ -27,11 +27,8 @@ const About = () => {
 
                     <AnimateLeft>
   <a href="https://suizombie.gitbook.io/zombiesui-whitepaper/">
-    <motion.button whileHover={{ scale: 1.1, backgroundColor: "#6C28FF" }} whileTap={{ scale: 0.9 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-cyan-500 hover:bg-purple-600 transition-all duration-200 ease-in-out px-6 py-3 rounded-lg mt-5 font-poppins text-white relative overflow-hidden">
+    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-green-500 hover:bg-green-600 transition-all duration-200 ease-in-out px-6 py-3 rounded-lg mt-5 font-poppins text-white glow">
       Whitepaper
-      <span className="absolute top-0 left-0 w-full h-full bg-cyan-400 opacity-20 rounded-full animate-pulse z-0"></span>
-      <span className="absolute top-0 left-0 w-full h-full bg-cyan-400 opacity-20 rounded-full animate-pulse-fast z-0"></span>
-      <span className="absolute top-0 left-0 w-full h-full bg-cyan-400 opacity-20 rounded-full animate-pulse-slow z-0"></span>
     </motion.button>
   </a>
 </AnimateLeft>
